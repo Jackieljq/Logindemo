@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabitNest - Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <nav class="main-navigation">
+        <div class="container">
+            <a class="logo" href="#">HabitNest</a>
+            <button class="toggle-menu" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggle-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navigation-menu">
+                    <li class="navigation-item active">
+                        <a class="navigation-link" href="#">Home</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">Habits</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">Challenges</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">Community</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#login-form">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-content">
+        <div class="welcome-section">
+            <h1 class="welcome-title">Welcome to HabitNest!</h1>
+            <p class="welcome-description">Track your habits, join challenges, and achieve your goals with our supportive community.</p>
+            <hr class="divider">
+        </div>
+    </div>
+
+    <div class="container login-register-section">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="login-card" id="login-form">
+                    <div class="login-header">
+                        <h4 class="login-heading">Login to HabitNest</h4>
+                    </div>
+                    <div class="login-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                            </div>
+                            <button type="submit" class="login-button">Login</button>
+                        </form>
+                        <div class="register-section">
+                            <p class="register-text">Don't have an account? <a href="#" id="register-link">Register Now</a></p>
+                            <form id="register-form" style="display: none;">
+                                <div class="form-group">
+                                    <label for="register-username">Username</label>
+                                    <input type="text" class="form-control" id="register-username" placeholder="Choose a username" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="register-password">Password</label>
+                                    <input type="password" class="form-control" id="register-password" placeholder="Choose a password" required>
+                                </div>
+                                <button type="submit" class="register-button">Register</button>
+                            </form>
+                        </div>
+                        <div class="forgot-password-link">
+                            <a href="#" class="text-muted">Forgot Password?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p class="footer-text">HabitNest</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
